@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v1.0.0...v2.0.0) (2017-04-20)
+
+
+### Features
+
+* use standardized naming convention for json param. ([6f708f5](https://github.com/mu-lib/mu-jquery-widget-cyoa/commit/6f708f5))
+
+
+### BREAKING CHANGES
+
+* - `.data("@component")` -> `.data("muJqueryWidgetCyoa")`
+- `data-jquery-widget-cyoa="{}"`
+- `json.component()` -> `json.widget()`
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v0.0.1...v1.0.0) (2017-04-20)
 
