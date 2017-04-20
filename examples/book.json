@@ -1,3 +1,11 @@
 {
-  "@component": "test"
+  "@component": "section",
+  "@children": [
+    {
+      "@component": "div"
+    },
+    {
+      "@component": "span"
+    }
+  ]
 }

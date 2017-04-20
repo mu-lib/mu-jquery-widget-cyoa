@@ -11,9 +11,9 @@
     }));
   }
 })(["../book"], function (book) {
-  function create() {
+  function create(json) {
     return {
-      "element": "<div>",
+      "element": "<" + json["@component"] + ">",
       "widget": "mu-jquery-widget-cyoa/widget"
     };
   }
