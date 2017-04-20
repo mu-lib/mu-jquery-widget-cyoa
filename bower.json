@@ -20,5 +20,6 @@
   "devDependencies": {
     "jquery": "^3.2.1",
     "mu-jquery-app": "^17.0.3"
-  }
+  },
+  "version": "1.0.0"
 }
