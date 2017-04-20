@@ -1,0 +1,28 @@
+{
+  "name": "mu-jquery-widget-cyoa",
+  "version": "0.0.1",
+  "description": "mu-jquery-widget Choose Your Own Adventure widget",
+  "main": "",
+  "scripts": {
+    "release": "standard-version",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mu-lib/mu-jquery-widget-cyoa.git"
+  },
+  "author": "Mikael Karon <mikael@karon.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mu-lib/mu-jquery-widget-cyoa/issues"
+  },
+  "homepage": "https://github.com/mu-lib/mu-jquery-widget-cyoa#readme",
+  "dependencies": {
+    "mu-jquery-widget": "^14.0.0"
+  },
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "mu-jquery-app": "^17.0.2",
+    "standard-version": "^4.0.0"
+  }
+}
