@@ -23,7 +23,7 @@
 
     return cfg
       ? $(cfg.element, { "mu-widget": cfg.widget })
-        .data("@component", json)
+        .data("muJqueryWidgetCyoa", json)
         .append($children)
       : $children;
   }

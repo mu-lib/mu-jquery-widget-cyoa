@@ -13,9 +13,9 @@
 })(["mu-jquery-widget/widget"], function (widget) {
   return widget.extend(function ($element, ns) {
     var me = this;
-    var json = me.json = $element.data("@component");
+    var json = me.json = $element.data("muJqueryWidgetCyoa");
 
-    json.component = function () {
+    json.widget = function () {
       return me;
     };
   });
