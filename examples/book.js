@@ -10,15 +10,15 @@
       return root[m.replace(/^\.{2}/, "mu-jquery-widget-cyoa")];
     }));
   }
-})(["../book"], function (book) {
-  function create(json) {
+})(["mu-jquery-widget/widget", "../walk"], function (widget, walk) {
+  function conf(json) {
     return {
       "element": "<" + json["@component"] + ">",
       "widget": "mu-jquery-widget-cyoa/widget"
     };
   }
 
-  return book.extend({
+  return widget.extend({
     "on/initialize": function () {
       var me = this;
 
@@ -27,7 +27,7 @@
           throw new Error("data.json [" + textStatus + "] " + errorThrown);
         })
         .then(function (json) {
-          return me.$element.append(me.prepare(me.json = json, create)).weave();
+          return me.$element.append(walk.call(me, me.json = json, conf)).weave();
         });
     }
   })
