@@ -13,7 +13,7 @@
 })(["mu-jquery-widget/widget"], function (widget) {
   return widget.extend(function ($element, ns) {
     var me = this;
-    var json = me.json = $element.data("muJqueryWidgetCyoa");
+    var json = me.json = $element.data("mu-jquery-widget-cyoa");
 
     json.widget = function () {
       return me;

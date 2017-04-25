@@ -9,7 +9,7 @@
     root["mu-jquery-widget-cyoa/walk"] = factory.apply(root, modules);
   }
 })([], function () {
-  return function walk(json, conf) {
+  return function walk(json, create) {
     var me = this;
     var $ = me.$;
     var parent = function () {
@@ -17,13 +17,13 @@
     };
     var $children = $.map(json["@children"] || false, function (child) {
       child.parent = parent;
-      return walk.call(me, child, conf);
+      return walk.call(me, child, create);
     });
-    var cfg = conf.call(me, json);
+    var $element = create.call(me, json);
 
-    return cfg
-      ? $(cfg.element, { "mu-widget": cfg.widget })
-        .data("muJqueryWidgetCyoa", json)
+    return $element
+      ? $element
+        .data("mu-jquery-widget-cyoa", json)
         .append($children)
       : $children;
   }
