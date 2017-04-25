@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v3.0.0...v3.1.0) (2017-04-25)
+
+
+### Features
+
+* added support for .key() ([2b48c90](https://github.com/mu-lib/mu-jquery-widget-cyoa/commit/2b48c90))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v2.0.0...v3.0.0) (2017-04-25)
 
