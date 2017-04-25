@@ -9,14 +9,16 @@
     root["mu-jquery-widget-cyoa/walk"] = factory.apply(root, modules);
   }
 })([], function () {
-  return function walk(json, create) {
+  function noop() { }
+
+  function walk(json, create) {
     var me = this;
     var parent = function () {
       return json;
     };
     var $children = me.$.map(json["@children"] || false, function (child, key) {
       child.parent = parent;
-      child.key = function() {
+      child.key = function () {
         return key;
       };
       return walk.call(me, child, create);
@@ -28,5 +30,10 @@
         .data("mu-jquery-widget-cyoa", json)
         .append($children)
       : $children;
+  }
+
+  return function (json, create) {
+    json.parent = json.key = noop;
+    return walk.call(this, json, create);
   }
 });
