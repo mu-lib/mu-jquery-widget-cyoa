@@ -18,13 +18,14 @@
   return widget.extend({
     "on/initialize": function () {
       var me = this;
+      var $ = me.$;
 
-      return me.$.ajax("book.json")
+      return $.ajax("book.json")
         .catch(function (data, textStatus, errorThrown) {
           throw new Error("data.json [" + textStatus + "] " + errorThrown);
         })
         .then(function (json) {
-          return me.$element.append(walk.call(me, me.json = json, create)).weave();
+          return me.$element.append(walk.call(me, $, me.json = json, create)).weave();
         });
     }
   })

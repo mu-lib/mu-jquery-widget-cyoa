@@ -11,17 +11,17 @@
 })([], function () {
   function noop() { }
 
-  function walk(json, create) {
+  function walk($, json, create) {
     var me = this;
     var parent = function () {
       return json;
     };
-    var $children = me.$.map(json["@children"] || false, function (child, key) {
+    var $children = $.map(json["@children"] || false, function (child, key) {
       child.parent = parent;
       child.key = function () {
         return key;
       };
-      return walk.call(me, child, create);
+      return walk.call(me, $, child, create);
     });
     var $element = create.call(me, json);
 
@@ -32,8 +32,8 @@
       : $children;
   }
 
-  return function (json, create) {
+  return function ($, json, create) {
     json.parent = json.key = noop;
-    return walk.call(this, json, create);
+    return walk.call(this, $, json, create);
   }
 });
