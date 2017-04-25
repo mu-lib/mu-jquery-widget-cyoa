@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v3.2.0...v4.0.0) (2017-04-25)
+
+
+### Features
+
+* make walk widget independent ([254631c](https://github.com/mu-lib/mu-jquery-widget-cyoa/commit/254631c))
+
+
+### BREAKING CHANGES
+
+* `walk` changes signature to `walk($, json, create)`
+
+
+
 <a name="3.2.0"></a>
 # [3.2.0](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v3.1.0...v3.2.0) (2017-04-25)
 
