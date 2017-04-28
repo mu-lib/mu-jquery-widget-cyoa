@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v4.0.0...v4.1.0) (2017-04-28)
+
+
+### Bug Fixes
+
+* don't override json.key/.parent on root node if already set. ([2e42f9f](https://github.com/mu-lib/mu-jquery-widget-cyoa/commit/2e42f9f))
+
+
+### Features
+
+* Pass $ to create ([32e5126](https://github.com/mu-lib/mu-jquery-widget-cyoa/commit/32e5126))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v3.2.0...v4.0.0) (2017-04-25)
 
