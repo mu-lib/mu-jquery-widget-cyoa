@@ -33,7 +33,8 @@
   }
 
   return function ($, json, create) {
-    json.parent = json.key = noop;
+    json.parent = json.parent || noop;
+    json.key = json.key || noop;
     return walk.call(this, $, json, create);
   }
 });
