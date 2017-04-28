@@ -23,7 +23,7 @@
       };
       return walk.call(me, $, child, create);
     });
-    var $element = create.call(me, json);
+    var $element = create.call(me, $, json);
 
     return $element
       ? $element

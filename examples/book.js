@@ -11,8 +11,8 @@
     }));
   }
 })(["mu-jquery-widget/widget", "../walk"], function (widget, walk) {
-  function create(json) {
-    return this.$("<" + json["@component"] + ">", { "mu-widget": "mu-jquery-widget-cyoa/widget" });
+  function create($, json) {
+    return $("<" + json["@component"] + ">", { "mu-widget": "mu-jquery-widget-cyoa/widget" });
   }
 
   return widget.extend({
@@ -25,7 +25,7 @@
           throw new Error("data.json [" + textStatus + "] " + errorThrown);
         })
         .then(function (json) {
-          return me.$element.append(walk.call(me, $, me.json = json, create)).weave();
+          return me.$element.append(walk($, me.json = json, create)).weave();
         });
     }
   })
