@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/mu-lib/mu-jquery-widget-cyoa#readme",
   "dependencies": {
-    "mu-jquery-widget": "^14.0.0"
+    "mu-jquery-widget": "^17.0.3"
   },
   "devDependencies": {
     "jquery": "^3.2.1",
-    "mu-jquery-app": "^17.0.2",
+    "mu-jquery-app": "^21.0.0",
     "standard-version": "^4.0.0"
   }
 }
