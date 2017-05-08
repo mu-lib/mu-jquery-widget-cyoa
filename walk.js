@@ -27,10 +27,16 @@
     if ($.isFunction(json.$element)) {
       $element = json.$element();
     }
-    else if ($element = json.$element = create.call(me, $, json)) {
-      $element
-        .data("mu-jquery-widget-cyoa", json)
-        .append($children);
+    else {
+      if ($element = create.call(me, $, json)) {
+        $element
+          .data("mu-jquery-widget-cyoa", json)
+          .append($children);
+      }
+
+      json.$element = function () {
+        return $element;
+      }
     }
 
     return $element || $children;
