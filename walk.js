@@ -34,9 +34,11 @@
           .append($children);
       }
 
-      json.$element = function () {
-        return $element;
-      }
+      json.$element = $element
+        ? function () {
+          return $element;
+        }
+        : noop;
     }
 
     return $element || $children;
