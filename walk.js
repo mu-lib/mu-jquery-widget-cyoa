@@ -17,19 +17,23 @@
       return json;
     };
     var $children = $.map(json["@children"] || false, function (child, key) {
-      child.parent = parent;
-      child.key = function () {
+      child.parent = child.parent || parent;
+      child.key = child.key || function () {
         return key;
-      };
+      }
       return walk.call(me, $, child, create);
     });
-    var $element = create.call(me, $, json);
-
-    return $element
-      ? $element
+    var $element;
+    if ($.isFunction(json.$element)) {
+      $element = json.$element();
+    }
+    else if ($element = create.call(me, $, json)) {
+      $element
         .data("mu-jquery-widget-cyoa", json)
-        .append($children)
-      : $children;
+        .append($children);
+    }
+
+    return $element || $children;
   }
 
   return function ($, json, create) {
