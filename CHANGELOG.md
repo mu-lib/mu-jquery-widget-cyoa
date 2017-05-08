@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.2.2"></a>
+## [4.2.2](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v4.2.1...v4.2.2) (2017-05-08)
+
+
+### Bug Fixes
+
+* store $element on json ([5ab565f](https://github.com/mu-lib/mu-jquery-widget-cyoa/commit/5ab565f))
+
+
+
 <a name="4.2.1"></a>
 ## [4.2.1](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v4.2.0...v4.2.1) (2017-05-08)
 
