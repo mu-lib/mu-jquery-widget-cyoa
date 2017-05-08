@@ -27,7 +27,7 @@
     if ($.isFunction(json.$element)) {
       $element = json.$element();
     }
-    else if ($element = create.call(me, $, json)) {
+    else if ($element = json.$element = create.call(me, $, json)) {
       $element
         .data("mu-jquery-widget-cyoa", json)
         .append($children);
