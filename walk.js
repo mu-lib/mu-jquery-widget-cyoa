@@ -47,6 +47,6 @@
   return function ($, json, create, prepare) {
     json.parent = json.parent || noop;
     json.key = json.key || noop;
-    return walk.call(this, $, json, create, prepare);
+    return walk.call(this, $, prepare.call(this, json) || json, create, prepare);
   }
 });
