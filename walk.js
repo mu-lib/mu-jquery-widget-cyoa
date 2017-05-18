@@ -11,7 +11,7 @@
 })([], function () {
   function noop() { }
 
-  function walk($, json, create) {
+  function walk($, json, create, prepare) {
     var me = this;
     var parent = function () {
       return json;
@@ -21,7 +21,7 @@
       child.key = child.key || function () {
         return key;
       }
-      return walk.call(me, $, child, create);
+      return walk.call(me, $, prepare ? prepare.call(me, child) || child : child, create, prepare);
     });
     var $element;
     if ($.isFunction(json.$element)) {
@@ -44,9 +44,9 @@
     return $element || $children;
   }
 
-  return function ($, json, create) {
+  return function ($, json, create, prepare) {
     json.parent = json.parent || noop;
     json.key = json.key || noop;
-    return walk.call(this, $, json, create);
+    return walk.call(this, $, json, create, prepare);
   }
 });
