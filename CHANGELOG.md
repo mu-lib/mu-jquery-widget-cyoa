@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.3.1"></a>
+## [4.3.1](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v4.3.0...v4.3.1) (2017-05-18)
+
+
+### Bug Fixes
+
+* prepare root node before walk ([18e1b3c](https://github.com/mu-lib/mu-jquery-widget-cyoa/commit/18e1b3c))
+
+
+
 <a name="4.3.0"></a>
 # [4.3.0](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v4.2.4...v4.3.0) (2017-05-18)
 
