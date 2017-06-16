@@ -1,14 +1,12 @@
-(function (modules, factory) {
-  var root = this;
-
+(function (root, factory) {
   if (typeof define === "function" && define.amd) {
-    define(modules, factory);
+    define([], factory);
   } else if (typeof module === "object" && module.exports) {
-    module.exports = factory.apply(root, modules.map(require));
+    module.exports = factory();
   } else {
-    root["mu-jquery-widget-cyoa/walk"] = factory.apply(root, modules);
+    root["mu-jquery-widget-cyoa/walk"] = factory();
   }
-})([], function () {
+})(this, function () {
   function noop() { }
 
   function walk($, json, create, prepare) {
