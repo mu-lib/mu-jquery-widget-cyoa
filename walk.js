@@ -14,7 +14,7 @@
     var parent = function () {
       return json;
     };
-    var $children = $.map(json["@children"] || false, function (child, key) {
+    var $children = $.map(json["@children"] || [], function (child, key) {
       child.parent = child.parent || parent;
       child.key = child.key || function () {
         return key;
