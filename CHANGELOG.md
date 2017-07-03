@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.3.3"></a>
+## [4.3.3](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v4.3.2...v4.3.3) (2017-07-03)
+
+
+### Bug Fixes
+
+* jQuery 3<2 fix for isArray ([0c3e84f](https://github.com/mu-lib/mu-jquery-widget-cyoa/commit/0c3e84f))
+
+
+
 <a name="4.3.2"></a>
 ## [4.3.2](https://github.com/mu-lib/mu-jquery-widget-cyoa/compare/v4.3.1...v4.3.2) (2017-06-16)
 
